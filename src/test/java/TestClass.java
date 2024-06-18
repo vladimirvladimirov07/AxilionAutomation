@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class TestClass {
     AxilionHomePage axilionHomePage;
     WebDriver driver;
+
     @BeforeSuite
     public void setup(){
         driver = new ChromeDriver();
@@ -28,6 +29,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption1();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(980, 70, 14));
     }
+
     @Test
     public void Test2() {
         axilionHomePage.setSliderValueRoadLength(70);
@@ -35,6 +37,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption1();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(1430, 65, 22));
     }
+
     @Test
     public void Test3() {
         axilionHomePage.setSliderValueRoadLength(155);
@@ -42,6 +45,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption1();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(3000, 60, 50));
     }
+
     @Test
     public void Test4() {
         axilionHomePage.setSliderValueRoadLength(49);
@@ -49,6 +53,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption2();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(1260, 90, 14));
     }
+
     @Test
     public void Test5() {
         axilionHomePage.setSliderValueRoadLength(70);
@@ -56,6 +61,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption2();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(1760, 80, 22));
     }
+
     @Test
     public void Test6() {
         axilionHomePage.setSliderValueRoadLength(155);
@@ -63,6 +69,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption2();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(3750, 75, 50));
     }
+
     @Test
     public void Test7() {
         axilionHomePage.setSliderValueRoadLength(49);
@@ -70,6 +77,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption3();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(1680, 120, 14));
     }
+
     @Test
     public void Test8() {
         axilionHomePage.setSliderValueRoadLength(70);
@@ -77,6 +85,7 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption3();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(2530, 115, 22));
     }
+
     @Test
     public void Test9() {
         axilionHomePage.setSliderValueRoadLength(155);
@@ -84,4 +93,5 @@ public class TestClass {
         axilionHomePage.clickSelectServiceOption3();
         Assert.assertEquals(axilionHomePage.getSaaSprice(),axilionHomePage.calculateSaaSprice(5250, 105, 50));
     }
+
 }
